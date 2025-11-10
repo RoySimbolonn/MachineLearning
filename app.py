@@ -198,11 +198,17 @@ st.markdown("### Find your next favorite song")
 
 col1, col2 = st.columns([3, 1])
 with col1:
-    song_input = st.selectbox(
-        "🔍 Select or type a song name:",
-        options=[''] + sorted(df_metadata['song_name'].tolist()),
-        format_func=lambda x: "Type to search..." if x == '' else x
+    song_input = st.text_input(
+        "🔍 Search song name:",
+        placeholder="Type to search..."
     )
+
+if song_input:
+        matches = [s for s in df_metadata['song_name'].tolist() if song_input.lower() in s.lower()]
+        if len(matches) > 0:
+            st.markdown("**Suggestions:**")
+            for i, s in enumerate(matches[:5]):  # tampilkan 5 teratas
+                st.markdown(f"- 🎵 {s}")
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
     search_button = st.button("🎯 Get Recommendations", use_container_width=True)

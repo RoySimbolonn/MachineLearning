@@ -55,7 +55,7 @@ def load_data():
     """Load dataset dan siapkan fitur"""
     try:
         # Load data
-        df = pd.read_csv("song_cleaned.csv")
+        df = pd.read_csv("song_cleaned .csv")
         
         # Deteksi kolom nama lagu
         possible_title_cols = ['song_name', 'title', 'name', 'track_name']

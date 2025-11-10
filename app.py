@@ -10,7 +10,7 @@ st.write("Masukkan nilai fitur lagu untuk menemukan lagu yang mirip.")
 # Load dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("song_data_knn_features.csv")
+    df = pd.read_csv("song_data_cleaned.csv")
     return df
 
 df = load_data()

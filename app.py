@@ -47,7 +47,7 @@ st.markdown("""
 def load_data():
     """Load dataset dan siapkan fitur"""
     try:
-        df = pd.read_csv("song_cleaned.csv")
+        df = pd.read_csv("song_cleaned .csv")
 
         # cari kolom nama lagu
         possible_title_cols = ['song_name', 'title', 'name', 'track_name']

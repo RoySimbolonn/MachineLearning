@@ -9,11 +9,11 @@ Proyek ini merupakan bagian dari **Ujian Tengah Semester Mata Kuliah Machine Lea
 ---
 
 ## 👥 Anggota Tim
-| Nama | NIM | 
-|------|-----|--------|
-| Roy Jannes Simbolon | 221113506 | 
-| Samuel Natalino Sitorus | 221111771 | 
-| Dela Amelia Sitorus | 221112198 | 
+
+Roy Jannes Simbolon (22113506)
+Saumel Natalino Sitorus (221111771)
+Dela Amelia Sitorus (221112198)
+
 ---
 
 ## 🧩 Kompleksitas Masalah
